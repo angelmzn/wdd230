@@ -1,0 +1,37 @@
+#container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+img  {
+    width: 150px;
+    height: 150px;
+    padding-left: 30px;
+}
+
+header {
+    background-color: rgb(87, 116, 214);
+    display: flex;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: rgb(87, 116, 214);
+    min-height: 100px;
+    border-radius: 30px;
+}
+
+footer p {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#name {
+    margin: 0 auto;
+    padding-top: 35px;
+}
+
+main h1 {
+    text-shadow: 2px 2px 5px red;
+}
