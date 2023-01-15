@@ -1,0 +1,19 @@
+@media only screen and (min-width: 32.5em){
+    li {
+        display: block;
+        border-style: solid;
+        border-width: 1px;
+        text-align: center;
+        list-style: none;
+    }
+
+    h1, p {
+        color: red;
+    }
+
+    a{
+        font-style: normal;
+        text-decoration: none;
+    }
+    
+}

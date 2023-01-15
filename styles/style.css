@@ -8,7 +8,7 @@ Fonts
 
 
 #container {
-    max-width: 600px;
+    max-width: 1000px;
     margin: 0 auto;
     font-family: 'Montserrat', 'Roboto', 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
 }
