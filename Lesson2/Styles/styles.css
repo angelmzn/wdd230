@@ -1,0 +1,146 @@
+/*Color pallete https://coolors.co/palette/000000-14213d-fca311-e5e5e5-ffffff*/
+
+:root {
+    --main-color: #E5E5E5;
+    --background-one: #14213D;
+    --background-two: #000000;
+    --highlight: #FCA311;
+    --contrast-background: #FFFFFF;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body, #container {
+    font-family: "Roboto", "Montserrat", "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+header {
+    background-color: var(--background-one);
+    color: var(--main-color);
+    text-align: center;
+    min-height: 200px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px){
+    body {
+        max-width: 767px;
+    }
+
+    }
+    header h1:nth-child(1) {
+        padding-top: 30px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    header {
+        padding-bottom: 30px;
+    }
+
+    .principle{
+        border: solid;
+        border-width: 1px;
+        border-color: var(--background-two);
+        border-radius: 15px;
+        margin-top: 50px;
+        background-color: var(--background-two);
+
+    }
+
+    .title {
+        color: var(--contrast-background);
+        padding-left: 5px;
+    }
+
+    .title a {
+        text-decoration: none;
+        font-size: 2em;
+        background-color: var(--highlight);
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .title a:hover {
+        background-color: #422a03;
+        color: var(--main-color);
+    }
+
+    .section-text {
+        background-color: var(--main-color);
+        padding: 10px;
+        border-radius: 15px;
+        max-width: 100%;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px){
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: "visual fitts"
+                                 "contrast contrast";
+        }
+
+        #visual-hierarchy {
+            grid-area: visual;
+        }
+
+        #fitts-law {
+            grid-area: fitts;
+        }
+
+        #contrast {
+            grid-area: contrast;
+            width: 100%;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .principle {
+            max-height: fit-content;
+        }
+
+    }
+
+    @media (min-width: 1025px) and (orientation: landscape) {
+            #container {
+                max-width: 1600px;
+            }
+        /* CSS */
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "visual fitts contrast";
+            text-align: center;
+        }
+        #visual-hierarchy {
+            grid-area: visual;
+        }
+
+        #fitts-law {
+            grid-area: fitts;
+        }
+
+        #contrast {
+            grid-area: contrast;
+            width: 100%;
+        }
+        
+      }
+      
