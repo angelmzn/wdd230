@@ -1,0 +1,220 @@
+/*Coolor palette https://coolors.co/1c1c36-8787ab-e1e1f4-3333ff-606080 */
+
+/*Defining color variables*/
+
+:root {
+    --primary: #1c1c36;
+    --secondary: #606080;
+    --contrast: #3333ff;
+    --accent1: #e1e1f4;
+    --accent2: #8787ab;
+}
+
+/*Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body,
+#container {
+    margin: 0;
+    background-color:aliceblue
+}
+
+#container {
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: 'Montserrat', 'Roboto', 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+    text-align: center;
+    display: flex;
+    margin: 0;
+    background-color: var(--primary);
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    width: 33.33%;
+    background-color: var(--primary);
+    margin-left: -10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+li:hover {
+    background-color: var(--contrast);
+}
+
+a:hover {
+    color: var(--primary);
+}
+
+li a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--accent1);
+}
+
+#title {
+    text-align: center;
+    margin: 0;
+    background-color: var(--accent1);
+    margin-bottom: 100px;
+    padding-top: 30px;
+}
+
+main {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#purpose {
+    text-align: center;
+
+}
+
+.divider {
+    border: 3px solid;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+#branding {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--secondary);
+    margin: 0;
+    margin-bottom: -16px;
+    font-size: larger;
+    font-weight: bold;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#audiences {
+    text-align: center;
+}
+
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 80%;
+    margin:  0 auto;
+    text-align: center;
+}
+
+.tg td {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tg th {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tg .tg-0lax {
+    text-align: center;
+    vertical-align: top
+}
+
+#primary {
+    background-color: var(--primary);
+    color: var(--accent1);
+}
+
+#secondary {
+    background-color: var(--secondary);
+    color: var(--accent1);
+}
+
+#contrast {
+    background-color: var(--contrast);
+    color: var(--accent1);
+}
+
+#accent1 {
+    background-color: var(--accent1);
+    color: var(--primary);
+}
+
+#accent2 {
+    background-color: var(--accent2);
+    color: var(--primary);
+}
+
+#color {
+    text-align: center;
+}
+
+#wireframe {
+    text-align: center;
+}
+
+#typography {
+    text-align: center;
+}
+#regular-background {
+    width: 80%;
+    background-color: var(--accent1);
+    margin: 0 auto;
+}
+
+#contrast-background {
+    width: 80%;
+    background-color: var(--primary);
+    color: var(--accent1);
+    margin: 0 auto;
+}
+
+#scenarios {
+    text-align: center;
+}
+
+#scenarios p {
+    text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+
+    ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    li {
+        width: 100%;
+    }
+
+    li a {
+        width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+  }
